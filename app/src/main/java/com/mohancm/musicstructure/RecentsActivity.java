@@ -47,14 +47,6 @@ public class RecentsActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this ));
         mRecyclerView.setAdapter(mAdapter);
 
-//        mRecyclerView.setOnClickListener(new AdapterView.OnClickListener(){
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-//                long viewId = view.getId();
-//                if(view)
-//            }
-//                                         }
-
         toolbarRecent.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

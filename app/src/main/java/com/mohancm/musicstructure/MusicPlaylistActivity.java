@@ -46,20 +46,7 @@ public class MusicPlaylistActivity extends AppCompatActivity {
                 startActivity(homeIntent);
             }
         });
-
-//        ImageView musicImage = (ImageView) findViewById(R.id.music_image);
-//
-//        musicImage.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent playlistIntent = new Intent(MusicPlaylistActivity.this, MusicPlaying.class);
-//                Toast.makeText(v.getContext(),"Playing music",Toast.LENGTH_SHORT).show();
-//
-//                startActivity(playlistIntent);
-//
-//            }
-//        });
-
+        
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
