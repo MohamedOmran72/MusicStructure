@@ -26,6 +26,7 @@
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/some_description"
             android:tint="@android:color/black"
             app:srcCompat="@drawable/ic_back_button" />
     </RelativeLayout>
@@ -34,6 +35,6 @@
         android:id="@+id/recyclerview_nr"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar_releases"/>
+        android:layout_below="@id/toolbar_releases" />
 
 </RelativeLayout>

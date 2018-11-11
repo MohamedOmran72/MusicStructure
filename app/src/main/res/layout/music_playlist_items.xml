@@ -12,6 +12,7 @@
         android:layout_height="42dp"
         android:layout_centerVertical="true"
         android:layout_marginStart="12dp"
+        android:contentDescription="@string/some_description"
         app:srcCompat="@drawable/ic_music_circle" />
 
     <TextView
