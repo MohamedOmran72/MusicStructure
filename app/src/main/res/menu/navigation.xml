@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:fontFamily="@font/google_sans_bold"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_music_library"
+        android:icon="@drawable/ic_music_folder"
+        android:fontFamily="@font/google_sans_bold"
+        android:title="@string/title_music_library" />
+
+    <item
+        android:id="@+id/navigation_recents"
+        android:icon="@drawable/ic_recents"
+        android:fontFamily="@font/google_sans_bold"
+        android:title="@string/title_recents" />
+    <item
+        android:id="@+id/navigation_new_releases"
+        android:icon="@drawable/ic_new_releases"
+        android:fontFamily="@font/google_sans_bold"
+        android:title="@string/title_new_releases" />
+
+</menu>

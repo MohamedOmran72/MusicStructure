@@ -1,0 +1,63 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/google_sans</item>
+    </style>
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="fontFamily">@font/google_sans_bold</item>
+    </style>
+
+    <style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
+    <item name="fontFamily">@font/google_sans</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--   AlbumList CardView Style  -->
+    <style name="AlbumListCardView">
+        <item name="android:elevation">@dimen/elevation</item>
+        <item name="android:layout_margin">@dimen/activity_margin</item>
+        <item name="android:background">@android:color/black</item>
+    </style>
+
+    <!--   AlbumList Title Style  -->
+    <style name="AlbumListTitle">
+        <item name="android:paddingTop">@dimen/padding_albumTitleTop</item>
+        <item name="android:paddingLeft">@dimen/padding_albumTitleLeft</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <!--   AlbumList Artist Style   -->
+    <style name="AlbumListArtist">
+        <item name="android:paddingLeft">@dimen/padding_albumArtistLeft</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <!--   GridView Style  -->
+    <style name="GridViewTemplate">
+        <item name="android:layout_marginTop">@dimen/gridView_marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/gridView_marginBottom</item>
+        <item name="android:verticalSpacing">@dimen/verticalSpacing</item>
+        <item name="android:horizontalSpacing">@dimen/horizontalSpacing</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+</resources>

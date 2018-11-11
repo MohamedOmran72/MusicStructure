@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_flow"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/main_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_marginRight="12dp"
+        android:alpha="0.56"
+        app:cardCornerRadius="12dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:elevation="5dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/wall" />
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/gradient_flow" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/now_playing"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:fontFamily="@font/google_sans_bold" />
+
+        <ImageButton
+            android:id="@+id/image_back_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@android:color/white"
+            app:srcCompat="@drawable/ic_back_button" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/image_card"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignBottom="@+id/main_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-36dp"
+        app:cardCornerRadius="36dp"
+        app:cardPreventCornerOverlap="true">
+
+        <ImageView
+            android:id="@+id/song_im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/wall" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_card"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="@string/music_name"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:fontFamily="@font/google_sans_bold" />
+
+    <TextView
+        android:id="@+id/author_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_tv"
+        android:layout_centerHorizontal="true"
+        android:text="@string/music_author"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/author_tv"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="72dp"
+        android:max="24000"
+        android:progress="12000"
+        android:progressDrawable="@drawable/progress_drawable" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:backgroundTint="@color/colorpurple"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_music_play" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignBottom="@+id/floatingActionButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toStartOf="@+id/floatingActionButton"
+        android:clickable="true"
+        android:src="@drawable/ic_rewind" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBar"
+        android:layout_alignBottom="@+id/floatingActionButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="-148dp"
+        android:layout_marginBottom="7dp"
+        android:layout_toStartOf="@+id/floatingActionButton"
+        android:clickable="true"
+        android:src="@drawable/ic_forward" />
+
+</RelativeLayout>
