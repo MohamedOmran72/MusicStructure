@@ -2,37 +2,37 @@ package com.mohancm.musicstructure;
 
 public class Song {
 
-    private String Title;
-    private String Author;
-    private int ImageId;
+    private String title;
+    private String author;
+    private int imageId;
 
     public Song(String title, String author, int imageId) {
-        Title = title;
-        Author = author;
-        ImageId = imageId;
+        this.title = title;
+        this.author = author;
+        this.imageId = imageId;
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
     public void setTitle(String title) {
-        Title = title;
+        this.title = title;
     }
 
     public String getAuthor() {
-        return Author;
+        return author;
     }
 
     public void setAuthor(String author) {
-        Author = author;
+        this.author = author;
     }
 
     public int getImageId() {
-        return ImageId;
+        return imageId;
     }
 
     public void setImageId(int imageId) {
-        ImageId = imageId;
+        this.imageId = imageId;
     }
 }
